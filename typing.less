@@ -1,0 +1,27 @@
+@keyframes sparkle-typing-blink {
+  0% {
+    background-color: rgb(128,255,0);
+    box-shadow: 0 0 10px 3px rgb(0,255,0);
+  }
+
+  50% {
+    background-color: rgb(0,0,0);
+    box-shadow: none;
+  }
+
+  100% {
+    background-color: rgb(128,255,0);
+    box-shadow: 0 0 10px 3px rgb(0,255,0);
+  }
+
+}
+
+.sparkle-typing-cursor {
+  animation-name: sparkle-typing-blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: baseline;
+}

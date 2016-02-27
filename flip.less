@@ -1,0 +1,43 @@
+sparkle-flip {
+  position: relative;
+  perspective: 1000;
+
+  .flipX {
+    transform: rotateX(180deg);
+  }
+
+  .flipY {
+    transform: rotateY(180deg);
+  }
+
+  .flipper {
+    position: relative;
+    transition: 2s;
+    transform-style: preserve-3d;
+
+    .front,
+    .back-x,
+    .back-y {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+
+    .back-x {
+      transform: rotateX(180deg);
+    }
+
+    .back-y {
+      transform: rotateY(180deg);
+    }
+  }
+
+}
