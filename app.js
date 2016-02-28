@@ -7,9 +7,9 @@
     // 'templates-common',
     // 'editor.home',
     // 'ui.router',
-    // 'sparkle.typing',
+    'sparkle.typing',
     'sparkle.loadanim',
-    // 'sparkle.flip'
+    'sparkle.flip'
   ])
 
   .controller('app', init);

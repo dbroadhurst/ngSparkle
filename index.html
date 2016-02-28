@@ -5,9 +5,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="app.js"></script>
     <script src="loadanim.directive.js"></script>
+    <script src="flip.directive.js"></script>
+    <script src="typing.directive.js"></script>
   </head>
   <body ng-app="ngApp">
-    <div>{{1+2}}</div>
+
+    <div style="color: white; font-size: 24px; font-family: 'Courier'"
+    sparkle-typing speed="100" delay-speed="2000" repeat="true"
+    message="\pauseCall trans opt: received. 2-19-98 13:24:18 REC:Log&gt\pause\cls Trace program: running\pause\cls \pauseSHALL WE PLAY A GAME?\pause GLOBAL THERMONUCLEAR\backspace(4) WAR\pause">
+    </div>
+
+    <sparkle-flip speed="" direction="x" style="display: inline-block; font-size: 56px; color: white; border: solid 4px gray">
+      <div class="front">
+        <!-- <img sparkle-loadfade="http://wallpapercave.com/wp/Pug6Mai.jpg" width="256px" height="256px"/> -->
+        front
+      </div>
+      <div class="back-x">
+        <!-- <img sparkle-loadfade="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" width="256px" height="256px"/> -->
+        back
+      </div>
+    </sparkle-flip>
+
+    <sparkle-flip speed="" direction="y" style="display: inline-block; font-size: 56px; color: white; border: solid 4px gray">
+      <div class="front">
+        <!-- <img sparkle-loadfade="http://wallpapercave.com/wp/Pug6Mai.jpg" width="256px" height="256px"/> -->
+        front
+      </div>
+      <div class="back-y">
+        <!-- <img sparkle-loadfade="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" width="256px" height="256px"/> -->
+        back
+      </div>
+    </sparkle-flip>
 
     <img sparkle-load-anim class="sparkle-load-zoom-hide" show="sparkle-load-zoom-show" image="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" speed="1000" width="128" height="128"/>
     <img sparkle-load-anim class="sparkle-load-scale-hide" show="sparkle-load-scale-show" image="http://wallpapercave.com/wp/Pug6Mai.jpg" speed="1000" width="128" height="128"/>
