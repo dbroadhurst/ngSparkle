@@ -11,38 +11,40 @@
     <link rel="stylesheet" type="text/css" href="loadanim.css">
     <link rel="stylesheet" type="text/css" href="flip.css">
   </head>
-  <body ng-app="ngApp" style="background-color: black">
+  <body ng-app="ngApp" style="background-color: rgb(32,32,32); font-size: 24px; font-family: 'Courier'; color: white ">
 
-    <div style="color: white; font-size: 24px; font-family: 'Courier'"
-    sparkle-typing speed="100" delay-speed="2000" repeat="true"
-    message="\pauseCall trans opt: received. 2-19-98 13:24:18 REC:Log&gt\pause\cls Trace program: running\pause\cls \pauseSHALL WE PLAY A GAME?\pause GLOBAL THERMONUCLEAR\backspace(4) WAR\pause">
+    <div style="background-color: rgb(0,0,0); padding: 16px; margin: 16px">
+      <div style="color: rgb(64,120,240); font-size: 24px; margin: 16px 0px">sparkle-typing</div>
+      <div style="" sparkle-typing speed="100" delay-speed="2000" repeat="true" message="\pauseCall trans opt: received. 2-19-98 13:24:18 REC:Log&gt\pause\cls Trace program: running\pause\cls \pauseSHALL WE PLAY A GAME?\pause GLOBAL THERMONUCLEAR\backspace(4) WAR\pause"></div>
     </div>
 
-    <sparkle-flip speed="" direction="x" style="display: inline-block; font-size: 56px; color: white; border: solid 4px gray">
-      <div class="front">
-        <!-- <img sparkle-loadfade="http://wallpapercave.com/wp/Pug6Mai.jpg" width="256px" height="256px"/> -->
-        front
-      </div>
-      <div class="back-x">
-        <!-- <img sparkle-loadfade="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" width="256px" height="256px"/> -->
-        back
-      </div>
-    </sparkle-flip>
+    <div style="background-color: rgb(0,0,0); padding: 16px; margin: 16px">
+      <div style="color: rgb(64,120,240); font-size: 24px; margin: 16px 0px">&ltsparkle-flip&gt</div>
+      <sparkle-flip speed="" direction="x" style="display: inline-block">
+        <div class="front" style="background-color: rgb(240,0,120)">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        </div>
+        <div class="back-x" style="background-color: rgb(240,120,120)">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,120,0); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        </div>
+      </sparkle-flip>
 
-    <sparkle-flip speed="" direction="y" style="display: inline-block; font-size: 56px; color: white; border: solid 4px gray">
-      <div class="front">
-        <!-- <img sparkle-loadfade="http://wallpapercave.com/wp/Pug6Mai.jpg" width="256px" height="256px"/> -->
-        front
-      </div>
-      <div class="back-y">
-        <!-- <img sparkle-loadfade="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" width="256px" height="256px"/> -->
-        back
-      </div>
-    </sparkle-flip>
+      <sparkle-flip speed="" direction="y" style="display: inline-block">
+        <div class="front" style="background-color: rgb(240,0,120)">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        </div>
+        <div class="back-y" style="background-color: rgb(240,120,120)">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        </div>
+      </sparkle-flip>
+    </div>
 
-    <img sparkle-load-anim class="sparkle-load-zoom-hide" show="sparkle-load-zoom-show" image="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" speed="1000" width="128" height="128"/>
-    <img sparkle-load-anim class="sparkle-load-scale-hide" show="sparkle-load-scale-show" image="http://wallpapercave.com/wp/Pug6Mai.jpg" speed="1000" width="128" height="128"/>
-    <img sparkle-load-anim class="sparkle-load-fade-hide" show="sparkle-load-fade-show" image="http://wallpapercave.com/wp/NEFv0tz.jpg" speed="1000" width="128" height="128"/>
+    <div style="background-color: rgb(0,0,0); padding: 16px; margin: 16px">
+      <div style="color: rgb(64,120,240); font-size: 24px; margin: 16px 0px">sparkle-load-anim</div>
+      <img sparkle-load-anim class="sparkle-load-zoom-hide" show="sparkle-load-zoom-show" image="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" speed="1000" width="192" height="192"/>
+      <img sparkle-load-anim class="sparkle-load-scale-hide" show="sparkle-load-scale-show" image="http://wallpapercave.com/wp/Pug6Mai.jpg" speed="1000" width="192" height="192"/>
+      <img sparkle-load-anim class="sparkle-load-fade-hide" show="sparkle-load-fade-show" image="http://wallpapercave.com/wp/NEFv0tz.jpg" speed="1000" width="192" height="192"/>
+    </div>
 
   </body>
 </html>
