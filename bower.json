@@ -1,0 +1,21 @@
+{
+  "name": "ngSparkle",
+  "homepage": "https://github.com/dbroadhurst/ngSparkle",
+  "authors": [
+    "David Broadhurst <david@union25.com>"
+  ],
+  "description": "A collection of Angular directives to add extra UI sparkle",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
