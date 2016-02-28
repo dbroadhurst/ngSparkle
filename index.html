@@ -10,31 +10,41 @@
     <link rel="stylesheet" type="text/css" href="typing.css">
     <link rel="stylesheet" type="text/css" href="loadanim.css">
     <link rel="stylesheet" type="text/css" href="flip.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-app="ngApp" style="background-color: rgb(32,32,32); font-size: 24px; font-family: 'Courier'; color: white ">
+  <body ng-app="ngApp" style="background-color: rgb(32,32,32); font-size: 24px; font-family: 'Roboto', sans-serif; color: white ">
 
+    <div style="position: relative; display: block; height: 256px; background-color: #00695C">
+      <div style="position: absolute; left: 50%; top: 20%; transform: translate(-50%, 0px); font-size: 64px; text-shadow: 8px 8px 5px rgb(0,0,0)">ngSparkle</div>
+      <div style="position: absolute; left: 50%; top: 60%; transform: translate(-50%, 0px); font-size: 24px">Angular easy polish and sparkle</div>
+    </div>
     <div style="background-color: rgb(0,0,0); padding: 16px; margin: 16px">
       <div style="color: rgb(64,120,240); font-size: 24px; margin: 16px 0px">sparkle-typing</div>
-      <div style="" sparkle-typing speed="100" delay-speed="2000" repeat="true" message="\pauseCall trans opt: received. 2-19-98 13:24:18 REC:Log&gt\pause\cls Trace program: running\pause\cls \pauseSHALL WE PLAY A GAME?\pause GLOBAL THERMONUCLEAR\backspace(4) WAR\pause"></div>
+      <div style="font-family: 'Orbitron', sans-serif;" sparkle-typing speed="100" delay-speed="2000" repeat="true" message="\pauseCall trans opt: received. 2-19-98 13:24:18 REC:Log&gt\pause\cls Trace program: running\pause\cls \pauseSHALL WE PLAY A GAME?\pause GLOBAL THERMONUCLEAR\backspace(4) WAR\pause"></div>
     </div>
 
     <div style="background-color: rgb(0,0,0); padding: 16px; margin: 16px">
       <div style="color: rgb(64,120,240); font-size: 24px; margin: 16px 0px">&ltsparkle-flip&gt</div>
       <sparkle-flip speed="" direction="x" style="display: inline-block">
-        <div class="front" style="background-color: rgb(240,0,120)">
-          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        <div class="front" style="background-color: #311B92; border-radius: 8px">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: #673AB7; box-shadow: 8px 8px 5px rgb(16,16,16); left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%"></div>
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">Front X flip</div>
         </div>
-        <div class="back-x" style="background-color: rgb(240,120,120)">
-          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,120,0); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        <div class="back-x" style="background-color: #00C853; border-radius: 8px">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: #1B5E20; box-shadow: 8px 8px 5px rgb(16,16,16); left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 8px"></div>
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">Back X flip</div>
         </div>
       </sparkle-flip>
 
       <sparkle-flip speed="" direction="y" style="display: inline-block">
-        <div class="front" style="background-color: rgb(240,0,120)">
-          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        <div class="front" style="background-color: #311B92; border-radius: 8px">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: #673AB7; box-shadow: 8px 8px 5px rgb(16,16,16); left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%"></div>
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">Front Y flip</div>
         </div>
-        <div class="back-y" style="background-color: rgb(240,120,120)">
-          <div style="position: absolute; width: 80%; height: 80%; background-color: rgb(0,0,120); box-shadow: 8px 8px 5px rgb(32,32,32); left: 50%; top: 50%; transform: translate(-50%, -50%)"></div>
+        <div class="back-y" style="background-color: #00C853; border-radius: 8px">
+          <div style="position: absolute; width: 80%; height: 80%; background-color: #1B5E20; box-shadow: 8px 8px 5px rgb(16,16,16); left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 8px"></div>
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">Back Y flip</div>
         </div>
       </sparkle-flip>
     </div>
