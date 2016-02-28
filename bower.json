@@ -1,0 +1,22 @@
+{
+  "name": "ngSparkle",
+  "homepage": "https://github.com/dbroadhurst/ngSparkle",
+  "authors": [
+    "David Broadhurst <david@union25.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngSparkle": "https://github.com/dbroadhurst/ngSparkle.git"
+  }
+}

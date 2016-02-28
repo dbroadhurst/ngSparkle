@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <title>ngSparkle</title>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs//angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bower_components/ngSparkle/loadanim.directive.js"></script>
   </head>
-  <body ng-app>
-    test
+  <body ng-app="ngApp">
+    <div>{{1+2}}</div>
+
+    <img sparkle-load-anim class="sparkle-load-zoom-hide" show="sparkle-load-zoom-show" image="http://eskipaper.com/images/sparkles-wallpaper-2.jpg" speed="1000" width="128" height="128"/>
+    <img sparkle-load-anim class="sparkle-load-scale-hide" show="sparkle-load-scale-show" image="http://wallpapercave.com/wp/Pug6Mai.jpg" speed="1000" width="128" height="128"/>
+    <img sparkle-load-anim class="sparkle-load-fade-hide" show="sparkle-load-fade-show" image="http://wallpapercave.com/wp/NEFv0tz.jpg" speed="1000" width="128" height="128"/>
+
   </body>
 </html>
