@@ -66,6 +66,7 @@ directive to add a flip card
 
 direction="x" or direction="y" flip direction
 
+---
 ### ```sparkle-load-anim```
 ---
 
@@ -86,7 +87,7 @@ width="192" height="192"/>
 
 ### available animations
 
-The following classes provide different load effects. Extending is trivial, look loadanim.css for reference
+The following classes provide different load effects. Extending is trivial, look at loadanim.css for reference
 
 ```css
 .sparkle-load-fade-hide
