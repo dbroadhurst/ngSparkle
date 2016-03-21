@@ -33,7 +33,8 @@
         }
       }, false);
     }
-
   }
+
+  init.$inject = ["$timeout"];
 
 }());

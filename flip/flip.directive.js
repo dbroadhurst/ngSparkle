@@ -34,4 +34,6 @@
     }
   }
 
+  init.$inject = ["$timeout"];
+
 }());

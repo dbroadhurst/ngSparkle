@@ -1,0 +1,15 @@
+{
+  "name": "ngSparkle",
+  "homepage": "https://github.com/dbroadhurst/ngSparkle",
+  "version": "1.0.1",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "4cca4a840f4dba269b5c9138f567798efd45d0d9"
+  },
+  "_source": "git://github.com/dbroadhurst/ngSparkle.git",
+  "_target": "^1.0.0",
+  "_originalSource": "ngSparkle",
+  "_direct": true
+}

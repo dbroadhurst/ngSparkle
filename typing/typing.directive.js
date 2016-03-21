@@ -10,7 +10,8 @@
         speed: '@speed',
         delaySpeed: '@delaySpeed',
         repeat: '@repeat',
-        message: '@message'
+        message: '@message',
+        isDone: '=isDone'
       },
       restrict: 'A',
       link: link
@@ -30,8 +31,8 @@
         repeat = scope.repeat || false;
 
       cursor.addClass('sparkle-typing-cursor');
-      cursor[0].style.width = fontSize;
-      cursor[0].style.height = fontSize;
+      cursor[0].style.width = fontSize.replace('px', '') - 2 + 'px';
+      cursor[0].style.height = fontSize.replace('px', '') - 2 + 'px';
 
       element.addClass('typing');
 
@@ -56,6 +57,8 @@
                 .split(')')[0];
               backspace = command.split('(')[1];
               text = text.slice(0, end) + text.slice(end + command.length + 1, text.length);
+            } else {
+              end++;
             }
           } else {
             end++;
@@ -65,6 +68,7 @@
           element.append(cursor);
         } else {
           if (repeat) {
+            scope.isDone();
             text = scope.message;
             end = 0;
           }
@@ -75,5 +79,7 @@
 
     }
   }
+
+  init.$inject = ["$timeout"];
 
 }());
